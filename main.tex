@@ -1,0 +1,87 @@
+\documentclass[12pt, a4paper, openany]{book}
+\usepackage{marginnote}
+\usepackage[left=2.5cm,top=3cm, bottom=3cm, right=4cm, marginparwidth=3cm,
+marginparsep=0.4cm]{geometry}
+
+% my custom stlye and functions stuff
+\usepackage{mystyle}
+\usepackage{nameref}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{kawa-i}
+\chead{\glqq Light\grqq}
+\rhead{\thepage}
+
+\title{
+  { \Large 
+    \textbf{\textsc{>>Light<<}}\\
+  }
+  \vspace{0.4cm}
+  { \large \color{gray}
+    \textsc{Ein Bildungs-Liverollenspiel}
+  }
+}
+\author{ananym, fux, louis}
+\date{{\small \today}}
+
+\begin{document}
+\frontmatter
+\maketitle
+
+\chapter*{Einleitung}
+\input{chapters/einleitung}
+
+\tableofcontents
+
+\mainmatter
+\chapter{Konzept}
+\input{chapters/konzept/konzept}
+\section{Ebenen}
+\input{chapters/konzept/ebenen}
+\section{Setting}\label{sec:setting}
+\input{chapters/konzept/setting}
+\section{Spiel Mechanik}
+\input{chapters/konzept/spiel-mechanik}
+\section{Bildungsinhalte}
+\input{chapters/konzept/bildungsinhalte}
+\section{Kollabiertes Zeitfenster}\label{sec:zeitfenster}
+\input{chapters/konzept/zeitfenster}
+
+\chapter{Main Plot}
+\input{chapters/main-plot}
+
+\chapter{Side Plots}
+\input{chapters/side-plots}
+
+\chapter{Zeiten}
+\input{chapters/zeiten/zeiten}
+\section{Z-A: 1968}\label{sec:za}
+\input{chapters/zeiten/zeit-a}
+\section{Z-B: 2012}\label{sec:zb}
+\input{chapters/zeiten/zeit-b}
+\section{Z-C: 2066}\label{sec:zc}
+\input{chapters/zeiten/zeit-c}
+
+\chapter{Parteien}
+\input{chapters/parteien/parteien}
+\section{P-1: >>Durcharbeiten<<}\label{sec:p1}
+\input{chapters/parteien/p1}
+\section{P-2: >>Verdrängen<<}\label{sec:p2}
+\input{chapters/parteien/p2}
+\section{P-3: Zeitwächer*innen}\label{sec:p3}
+\input{chapters/parteien/p3}
+
+\chapter{Charaktere}
+\input{chapters/charaktere}
+
+\chapter{Regeln}
+\input{chapters/regeln}
+
+\chapter{Random Ideen}
+\input{chapters/random}
+
+\chapter{Offene Fragen}\label{ch:offene_fragen}
+\input{chapters/fragen.tex}
+
+\end{document}

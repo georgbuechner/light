@@ -1,0 +1,13 @@
+build/*
+!*.bib
+!*.tex
+*.swp
+*.aux
+*.log
+*.pdf
+*.blg
+*.bcf
+*.bbl
+*.run.xml
+*.toc
+*.out
